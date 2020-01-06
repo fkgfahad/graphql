@@ -7,7 +7,6 @@ const {
   GraphQLID,
   GraphQLList
 } = require('graphql');
-const _ = require('lodash');
 
 const Author = require('./../models/author');
 const Book = require('./../models/book');
