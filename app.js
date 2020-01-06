@@ -6,10 +6,7 @@ const app = express();
 const schema = require('./server/schema/schema');
 
 mongoose
-  .connect(
-    'mongodb://fahad-gql:ytbzooks111@ds048279.mlab.com:48279/db_node_ts',
-    { useNewUrlParser: true, useUnifiedTopology: true }
-  )
+  .connect('[DB_URI]', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Connected to DB'))
   .catch(e => console.log(e));
 
